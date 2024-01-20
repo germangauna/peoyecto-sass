@@ -1,0 +1,15 @@
+    /*variables, se ponen con el signo de pesos $, se pone : y el valor*/
+
+@import'../base/listas';
+
+$border-menu: 2px solid nth($colores, 1);
+$decoracion: underline;
+
+
+
+
+
+ /*que pasa si tengo muchos colores y tengo muchas variables???
+ sass nbos permite obtimizar las variables, nos deja hscer archivos
+ parcialesque empieza siempre con un guion bajo, y pponerlos en la 
+  carpeta de scss, y los tenemos que importar para que esten conectados */

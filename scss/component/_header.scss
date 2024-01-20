@@ -1,0 +1,72 @@
+
+// nesting o anidamiento, nos da posibilidad de crear una cascada,
+//  de etiquetas, vamos poniendo estilos y en el css cuando guardamos 
+//  queda todo guardado y orfenado, lo bueno es que yo puedo guardar
+// y subir sin que se vea nada, y si quiero arreglar algo lo voyu a buscar ahi
+@import'../base/listas';
+
+.header-uno {
+    background-color: nth($colores, 6);
+    color: white;
+        nav {
+            border: $border-menu;
+            ul {
+                list-style: none;
+                li {
+    
+                    a {
+                        text-decoration: none;
+                        /* & */
+                        &:hover {
+                            text-decoration: $decoracion;
+                        }
+                    }
+                   }
+                }            
+             }
+    
+             @media screen and (max-width: 490px) {
+                background-color: red;
+             }
+        }
+    
+        /*que pasa si yo quiero hacer una seudo clases??, existe el & amper donde yo 
+        lo pomgo en la etiqueta    ue nosotros queremos que sucesa o acciones el hover por ejemploe*/
+    
+    
+        /*tambien se puede agregar una media query, y esta va a quedar agregadda ordenadamente en
+        la etiqueta que nosotros la alla mos puesto, este casio lo pongo en el header directamente y no
+        tengo que aclar que va en el header, poner la media query y la accion que queremos que suceda */
+    
+    
+    
+    
+    
+.header-home {
+            background-color: nth($colores, 6);
+            color: white;
+                nav {
+                    border: $border-menu;
+                    ul {
+                        list-style: none;
+                        li {
+            
+                            a {
+                                text-decoration: none;
+                                /* & */
+                                &:hover {
+                                    text-decoration: $decoracion;
+                                }
+                            }
+                           }
+                        }            
+                     }
+            
+                     @media screen and (max-width: 490px) {
+                        background-color: green;
+                     }
+                }
+    
+     /*lo  bueno de las variables es que si quiero cambiar algun valor,
+     lo hago directamente desde la variable, y no tengo que cambiarlo 
+     desde cada uno de estilos*/

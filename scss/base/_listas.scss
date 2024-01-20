@@ -1,0 +1,20 @@
+/*las listas, en estas usamos una funcion que se llama nth(nombre 
+del elemento y el numero de ubicacion del elemento)
+que necesitamos ejemplo: backgrount-color: nth($colores, 1)*/
+
+$colores:
+red,
+green,
+black,
+gray,
+white,
+blue;
+
+/*tambien lo podemos hacer con una lista de pixeles de medidas */
+
+$medidas:
+1px,
+2px,
+5px,
+16px,
+250px;

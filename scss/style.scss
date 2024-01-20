@@ -1,0 +1,19 @@
+
+@import'base/variables';
+@import'component/header';
+
+
+/*que pasa si tengo muchos colores y tengo muchas variables???
+sass nbos permite obtimizar las variables, nos deja hscer archivos
+parcialesque empieza siempre con un guion bajo, y pponerlos en la 
+ carpeta de scss, y los tenemos que importar para que esten conectados */
+
+ /* nota: las variables simpre van arriba, porque es lo primero que se lee*/
+
+ /*tambien para que este mas ordenado el codigo, se pueden hacer 2 carpetas,
+ una que se llamme component y la otra base, en la de de base siempre se ponen
+ las que competen a varias partes de un proyecto  y los componentes se ponen las 
+ secciones de la pagina, esto nos obliga a cambiar las rutas de nuestros archivos
+ vinculados*/
+
+ 

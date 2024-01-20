@@ -1,0 +1,79 @@
+/*variables, se ponen con el signo de pesos $, se pone : y el valor*/
+/*las listas, en estas usamos una funcion que se llama nth(nombre 
+del elemento y el numero de ubicacion del elemento)
+que necesitamos ejemplo: backgrount-color: nth($colores, 1)*/
+/*tambien lo podemos hacer con una lista de pixeles de medidas */
+/*que pasa si tengo muchos colores y tengo muchas variables???
+sass nbos permite obtimizar las variables, nos deja hscer archivos
+parcialesque empieza siempre con un guion bajo, y pponerlos en la 
+ carpeta de scss, y los tenemos que importar para que esten conectados */
+/*las listas, en estas usamos una funcion que se llama nth(nombre 
+del elemento y el numero de ubicacion del elemento)
+que necesitamos ejemplo: backgrount-color: nth($colores, 1)*/
+/*tambien lo podemos hacer con una lista de pixeles de medidas */
+.header-uno {
+  background-color: blue;
+  color: white;
+}
+.header-uno nav {
+  border: 2px solid red;
+}
+.header-uno nav ul {
+  list-style: none;
+}
+.header-uno nav ul li a {
+  text-decoration: none;
+  /* & */
+}
+.header-uno nav ul li a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 490px) {
+  .header-uno {
+    background-color: red;
+  }
+}
+
+/*que pasa si yo quiero hacer una seudo clases??, existe el & amper donde yo 
+lo pomgo en la etiqueta    ue nosotros queremos que sucesa o acciones el hover por ejemploe*/
+/*tambien se puede agregar una media query, y esta va a quedar agregadda ordenadamente en
+la etiqueta que nosotros la alla mos puesto, este casio lo pongo en el header directamente y no
+tengo que aclar que va en el header, poner la media query y la accion que queremos que suceda */
+.header-home {
+  background-color: blue;
+  color: white;
+}
+.header-home nav {
+  border: 2px solid red;
+}
+.header-home nav ul {
+  list-style: none;
+}
+.header-home nav ul li a {
+  text-decoration: none;
+  /* & */
+}
+.header-home nav ul li a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 490px) {
+  .header-home {
+    background-color: green;
+  }
+}
+
+/*lo  bueno de las variables es que si quiero cambiar algun valor,
+lo hago directamente desde la variable, y no tengo que cambiarlo 
+desde cada uno de estilos*/
+/*que pasa si tengo muchos colores y tengo muchas variables???
+sass nbos permite obtimizar las variables, nos deja hscer archivos
+parcialesque empieza siempre con un guion bajo, y pponerlos en la 
+ carpeta de scss, y los tenemos que importar para que esten conectados */
+/* nota: las variables simpre van arriba, porque es lo primero que se lee*/
+/*tambien para que este mas ordenado el codigo, se pueden hacer 2 carpetas,
+una que se llamme component y la otra base, en la de de base siempre se ponen
+las que competen a varias partes de un proyecto  y los componentes se ponen las 
+secciones de la pagina, esto nos obliga a cambiar las rutas de nuestros archivos
+vinculados*/
+
+/*# sourceMappingURL=style.css.map */
