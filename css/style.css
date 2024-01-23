@@ -65,6 +65,19 @@ tengo que aclar que va en el header, poner la media query y la accion que querem
 /*lo  bueno de las variables es que si quiero cambiar algun valor,
 lo hago directamente desde la variable, y no tengo que cambiarlo 
 desde cada uno de estilos*/
+/*creamos el marshal mapas*/
+/*1-tienen una key y tambien 8una valor*/
+/*2- es como la lista o grupo de propiedaddes, que noi
+necesariamente de la misma familia, por ejemplo: la 
+lista de colores que hicimos anterior*/
+/*enctonces podes poner un grupo de propiedades, 
+estegrupo lo llamo cuanod lo necvesito, o la propiedad
+de ese grupo que necesito  */
+/*entonces aca cree dos grupos de propiedades donde vamos a llamar a alguna de 
+estas propiedades*/
+/*aca pongo el mapa que necesito que seria $standard y la key seria bg-standard
+naturalmente se usan para tener paquetes, donde fijamos propiedades que pueden 
+llegar a tener un rango para uno, o un estilo en particular */
 /*que pasa si tengo muchos colores y tengo muchas variables???
 sass nbos permite obtimizar las variables, nos deja hscer archivos
 parcialesque empieza siempre con un guion bajo, y pponerlos en la 

@@ -1,0 +1,40 @@
+/*creamos el marshal mapas*/
+/*1-tienen una key y tambien 8una valor*/
+/*2- es como la lista o grupo de propiedaddes, que noi
+necesariamente de la misma familia, por ejemplo: la 
+lista de colores que hicimos anterior*/
+
+$standard: (
+    color-standar:gray,
+    bg-standar: red,
+    mx-auto: 0 auto,
+    flexbox-standard: flex
+);
+
+/*enctonces podes poner un grupo de propiedades, 
+estegrupo lo llamo cuanod lo necvesito, o la propiedad
+de ese grupo que necesito  */
+
+
+$premium: (
+    color-standar:black,
+    bg-standar: yellow,
+    mx-auto: 0 auto,
+    flexbox-standard: grid
+);
+
+
+
+/*entonces aca cree dos grupos de propiedades donde vamos a llamar a alguna de 
+estas propiedades*/
+
+.standard {
+    background-color: map-get($standard, bg-standard);
+}
+/*aca pongo el mapa que necesito que seria $standard y la key seria bg-standard
+naturalmente se usan para tener paquetes, donde fijamos propiedades que pueden 
+llegar a tener un rango para uno, o un estilo en particular */
+
+
+
+
