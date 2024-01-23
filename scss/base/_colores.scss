@@ -1,0 +1,48 @@
+/*podemos crear otro marshal donde sean 2 tipos de colores, y con estos
+poder darle tonalidades, al primario por ejemplo, le ponemos la propiedad 
+darken, el valor, y el porcentajr que queremos que se ocuresca en este caso,
+y asi crear gamas de colorespara que nuestro sitio quede con colores complementarios
+*/
+
+$color-primario: #900;
+$color-secundario: #090;
+
+
+.border-menu {
+    border: 1px solid darken($color-primario,15%);
+}
+
+
+/*entonces aca lo que estamos haciendo es que tenemos como fondo el color secundario,
+y cuando psemos el mouse queremos que se ponga del color mas claro*/
+
+.bg-fotos {
+    background-color: $color-secundario;
+    &:hover {
+        background-color: lighten($color-secundario, 40%);
+    }
+}
+
+/* tambien podemos hacer el mix entre varios colores */
+
+.section-loca {
+    background-color: mix($color-primario, $color-secundario);
+  }
+
+//   y tambioen existe el la accion  de saturar los colores
+
+
+.saturation {
+    color: saturate($color-primario, 20%);
+}
+
+// tambien lo podemos hacerlo opaco
+
+.copacidad {
+    color: rgba($color-primario, 0.8);
+}
+
+/*enn la documentacion de sasss hay mucha documentacion 
+y si se lee como estas convim+naciones de herramientas 
+esta buebno qie las practiquen*/
+
