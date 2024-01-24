@@ -66,13 +66,17 @@ tengo que aclar que va en el header, poner la media query y la accion que querem
 lo hago directamente desde la variable, y no tengo que cambiarlo 
 desde cada uno de estilos*/
 /*creamos el marshal mapas*/
-/*1-tienen una key y tambien 8una valor*/
-/*2- es como la lista o grupo de propiedaddes, que noi
-necesariamente de la misma familia, por ejemplo: la 
+/*1-tienen una key y tambien un valor*/
+/*2- es como la lista o grupo de propiedades, que no
+necesariamente tiene que ser de la misma familia, por ejemplo: la 
 lista de colores que hicimos anterior*/
-/*enctonces podes poner un grupo de propiedades, 
-estegrupo lo llamo cuanod lo necvesito, o la propiedad
-de ese grupo que necesito  */
+/*las listas, en estas usamos una funcion que se llama nth(nombre 
+del elemento y el numero de ubicacion del elemento)
+que necesitamos ejemplo: backgrount-color: nth($colores, 1)*/
+/*tambien lo podemos hacer con una lista de pixeles de medidas */
+/*entonces podes poner un grupo de propiedades, 
+este grupo lo llamo cuando lo necesito, o la propiedad
+de ese grupo que necesito*/
 /*entonces aca cree dos grupos de propiedades donde vamos a llamar a alguna de 
 estas propiedades*/
 /*aca pongo el mapa que necesito que seria $standard y la key seria bg-standard
@@ -117,10 +121,15 @@ muchos lugares*/
 /* se escribem con un signo % play holder el nombre las llaves y las 
 propiedades que yose que se van a repetir en todos los botones*/
 /*% + nombre {las propiedades}*/
-.boton-error {
-  border: 1px solid black;
+.desabled, .acepted, .boton-error {
+  border: 1px solid transparent;
   border-bottom: 6px;
   padding: 10px;
+}
+
+.desabled, .acepted, .boton-error {
+  display: flex;
+  justify-content: center;
 }
 
 .boton-error {
@@ -130,6 +139,19 @@ propiedades que yose que se van a repetir en todos los botones*/
 /*aca pusimos los estilos de nuestro boron de error, pewro le pusimos las
 propiedades que tiene el extend, sin necesidad de volver a escribirlas, simple=
 mente poner @extend con el nombre del extend*/
+/*tambien podemos tener un boton de aceptar en diferente color pero con las
+ miams caracteristicas, ahi le vamos a poner abajo del background-color el
+  @extend %botones;*/
+.acepted {
+  background-color: green;
+}
+
+.desabled {
+  background-color: gray;
+}
+
+/*si hago algun cambio en algunas de nuestras extenciones automaticamente
+ se cambian en todas las clases de nuestros estilos*/
 /*que pasa si tengo muchos colores y tengo muchas variables???
 sass nbos permite obtimizar las variables, nos deja hscer archivos
 parcialesque empieza siempre con un guion bajo, y pponerlos en la 

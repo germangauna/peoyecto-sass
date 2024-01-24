@@ -1,24 +1,26 @@
 /*creamos el marshal mapas*/
-/*1-tienen una key y tambien 8una valor*/
-/*2- es como la lista o grupo de propiedaddes, que noi
-necesariamente de la misma familia, por ejemplo: la 
+/*1-tienen una key y tambien un valor*/
+/*2- es como la lista o grupo de propiedades, que no
+necesariamente tiene que ser de la misma familia, por ejemplo: la 
 lista de colores que hicimos anterior*/
 
+@import'./listas';
+
 $standard: (
-    color-standar:gray,
-    bg-standar: red,
+    color-standar:nth($colores, 4),
+    bg-standar: nth($colores, 1),
     mx-auto: 0 auto,
     flexbox-standard: flex
 );
 
-/*enctonces podes poner un grupo de propiedades, 
-estegrupo lo llamo cuanod lo necvesito, o la propiedad
-de ese grupo que necesito  */
+/*entonces podes poner un grupo de propiedades, 
+este grupo lo llamo cuando lo necesito, o la propiedad
+de ese grupo que necesito*/
 
 
 $premium: (
-    color-standar:black,
-    bg-standar: yellow,
+    color-standar:nth($colores, 3),
+    bg-standar: nth($colores, 7),
     mx-auto: 0 auto,
     flexbox-standard: grid
 );

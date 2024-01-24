@@ -8,17 +8,48 @@ propiedades que yose que se van a repetir en todos los botones*/
 /*% + nombre {las propiedades}*/
 
 %botones {
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-bottom: 6px;
     padding: 10px;
 }
 
+// tambien podemos tener otros extend y ponerle varios a  nuestros botones
+
+%flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+
 .boton-error {
     background-color: red;
     @extend %botones;
+    @extend %flexbox
 }
 
 
 /*aca pusimos los estilos de nuestro boron de error, pewro le pusimos las
 propiedades que tiene el extend, sin necesidad de volver a escribirlas, simple=
 mente poner @extend con el nombre del extend*/
+
+
+/*tambien podemos tener un boton de aceptar en diferente color pero con las
+ miams caracteristicas, ahi le vamos a poner abajo del background-color el
+  @extend %botones;*/ 
+
+  .acepted {
+    background-color: green;
+    @extend %botones;
+    @extend %flexbox
+
+}
+
+.desabled {
+    background-color: gray;
+    @extend %botones;
+    @extend %flexbox
+
+}
+
+/*si hago algun cambio en algunas de nuestras extenciones automaticamente
+ se cambian en todas las clases de nuestros estilos*/

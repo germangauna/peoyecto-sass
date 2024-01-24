@@ -7,7 +7,7 @@
 
 .header-uno {
     background-color: nth($colores, 6);
-    color: white;
+    color: nth($colores, 5);
         nav {
             border: $border-menu;
             ul {
@@ -26,7 +26,7 @@
              }
     
              @media screen and (max-width: 490px) {
-                background-color: red;
+                background-color: nth($colores, 1);
              }
         }
     
