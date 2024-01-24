@@ -1,0 +1,24 @@
+/*los extends son bolsitas de propiedades que podemos reutilizar en
+muchos lugares*/
+
+
+/* se escribem con un signo % play holder el nombre las llaves y las 
+propiedades que yose que se van a repetir en todos los botones*/
+
+/*% + nombre {las propiedades}*/
+
+%botones {
+    border: 1px solid black;
+    border-bottom: 6px;
+    padding: 10px;
+}
+
+.boton-error {
+    background-color: red;
+    @extend %botones;
+}
+
+
+/*aca pusimos los estilos de nuestro boron de error, pewro le pusimos las
+propiedades que tiene el extend, sin necesidad de volver a escribirlas, simple=
+mente poner @extend con el nombre del extend*/

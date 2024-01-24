@@ -105,12 +105,40 @@ y cuando psemos el mouse queremos que se ponga del color mas claro*/
   color: #990000;
 }
 
-.copacidad {
+.opacidad {
   color: rgba(153, 0, 0, 0.8);
 }
 
 /*enn la documentacion de sasss hay mucha documentacion 
 y si se lee como estas convim+naciones de herramientas 
 esta buebno qie las practiquen*/
+/*los extends son bolsitas de propiedades que podemos reutilizar en
+muchos lugares*/
+/* se escribem con un signo % play holder el nombre las llaves y las 
+propiedades que yose que se van a repetir en todos los botones*/
+/*% + nombre {las propiedades}*/
+.boton-error {
+  border: 1px solid black;
+  border-bottom: 6px;
+  padding: 10px;
+}
+
+.boton-error {
+  background-color: red;
+}
+
+/*aca pusimos los estilos de nuestro boron de error, pewro le pusimos las
+propiedades que tiene el extend, sin necesidad de volver a escribirlas, simple=
+mente poner @extend con el nombre del extend*/
+/*que pasa si tengo muchos colores y tengo muchas variables???
+sass nbos permite obtimizar las variables, nos deja hscer archivos
+parcialesque empieza siempre con un guion bajo, y pponerlos en la 
+ carpeta de scss, y los tenemos que importar para que esten conectados */
+/* nota: las variables simpre van arriba, porque es lo primero que se lee*/
+/*tambien para que este mas ordenado el codigo, se pueden hacer 2 carpetas,
+una que se llamme component y la otra base, en la de de base siempre se ponen
+las que competen a varias partes de un proyecto  y los componentes se ponen las 
+secciones de la pagina, esto nos obliga a cambiar las rutas de nuestros archivos
+vinculados*/
 
 /*# sourceMappingURL=style.css.map */
