@@ -204,6 +204,31 @@ con el valor y no tenemos que escribir nada mas  */
   transform: scale(4);
 }
 
+.transform.three {
+  -o-transform: rotate(90del);
+  -moz-transform: rotate(90del);
+  transform: rotate(90del);
+}
+
+/*tambien se pueden usar vasrios parametros vacios a la vez,
+ una vez que los llamemos a estos parametros con el include
+ nos va aparecer 3 comas donde tendremos que poner los tres valores */
+.miedo {
+  width: 50%;
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  /* si le agregamos uno extra simprew va a ser center*/
+}
+
+.agustina {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* si le agregamos uno extra simprew va a ser center*/
+}
+
 /*que pasa si tengo muchos colores y tengo muchas variables???
 sass nbos permite obtimizar las variables, nos deja hscer archivos
 parcialesque empieza siempre con un guion bajo, y pponerlos en la 

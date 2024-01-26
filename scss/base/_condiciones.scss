@@ -1,0 +1,20 @@
+/*las condiciones se ponen esperando la decision de un futuro cercano,
+y cuando lo incluis en una clase, se agrega la condicion que hemos puesto*/
+
+@mixin condicion ($colores ) {
+    background-color: $colores;
+
+    @if $colores == orange {
+        border: 1px solid black;
+    } @else {
+        border: 4px dotted gray;
+    }
+}
+
+.bg-condicion {
+    @include condicion (blue);
+}
+
+bg-ahora-si {
+    @include condicion(orange);
+}
