@@ -152,6 +152,58 @@ mente poner @extend con el nombre del extend*/
 
 /*si hago algun cambio en algunas de nuestras extenciones automaticamente
  se cambian en todas las clases de nuestros estilos*/
+/*son muy parecidos a los extends, con la regla mixins, ponemos el nombre, llaves, 
+las propiedades, y despues en las clases solos ponemos @include y el nombre del mixin, 
+automaticamente se copian todas las propiedades, y si tengo otra clase con los mismos
+estilos de estas propiedfades, tengo que haxaer exactamente los mismos, y automaticamente
+ adquiere las mismas propirdades, solo escribo un alinea y en el codigo de css se transcriben 3 */
+.mirando {
+  border: 1px solid transparent;
+  border-bottom: 6px;
+  padding: 10px;
+}
+
+.miranda {
+  border: 1px solid transparent;
+  border-bottom: 6px;
+  padding: 10px;
+}
+
+/*la diferencia primero es que no los agrupo, en realidad los mixin, son diferentes
+se van a utilizar de manera diferente*/
+/*mixin incluyen un $parametro ($variable) vacio al cual 
+le voy a dar un valor en un futuro cercano, o sea, cuando lo utilice */
+.animaciones {
+  transform: 50%;
+}
+
+/*constructores -armamos una estructura que vamos a reutilizar 
+ en varios elementos, pero sin saber necesariamente el valor de 
+ de cada propiedad*/
+.animacion-one {
+  width: 100%;
+}
+
+.animacion-two {
+  width: 50%;
+}
+
+/*cuando teniamos los prefijos para haxcer las animaciones y no
+ escribir mucho codigo, usamos los mixins*/
+/*ahora cuando tenemos las clases inmcluimos solamente los prefijos 
+con el valor y no tenemos que escribir nada mas  */
+.transform.one {
+  -o-transform: translate(50%);
+  -moz-transform: translate(50%);
+  transform: translate(50%);
+}
+
+.transform.two {
+  -o-transform: scale(4);
+  -moz-transform: scale(4);
+  transform: scale(4);
+}
+
 /*que pasa si tengo muchos colores y tengo muchas variables???
 sass nbos permite obtimizar las variables, nos deja hscer archivos
 parcialesque empieza siempre con un guion bajo, y pponerlos en la 
